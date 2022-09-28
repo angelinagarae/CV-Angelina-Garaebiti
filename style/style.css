@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&display=swap');
+
+body {
+    background: linear-gradient(45deg, rgb(248, 195, 122), rgb(239, 241, 122));
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* les titre */
+h1, h2{
+    text-align: center;
+}
+h1 {
+    font-family: 'Ms Madi', cursive;
+    color: rgb(252, 214, 165);
+    font-size: 100px;
+    display:inline;    
+}
+h1:hover {
+    color: white;
+}
+h2 {
+    text-transform: uppercase
+}
+
+
+/* le haut de la page */
+header {   
+    background-image: url('../images/fond.jpg');
+    text-align: center;
+    margin-bottom:25px ;
+
+}
+header div {
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 100, 0, 0.31);
+}
+header img {
+    width: 15%;
+    height: 15%;
+}
+
+header img,h1 {
+    display: inline-block;
+}
+
+
+/* listes  */
+ul {
+    list-style-type: none;
+}
+
+
+/* contact */
+#mes-infos {
+    display: inline-block;
+}
+#mes-infos li {
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+/* les puces de liste */
+#calendrier {
+    list-style-image: url("../images/calendar.png");
+}
+#telephone {
+    list-style-image: url("../images/telephone.png");
+}
+#adresse {
+    list-style-image: url('../images/home.png');
+}
+#mail {
+    list-style-image: url('../images/mail.png');
+}
+
+
+/* le menu  navbar*/
+#menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+#menu li {
+    display: inline-block;
+}
+#menu li a {
+    color: #444444;
+    text-decoration: none;
+    padding: 10px 25px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+#menu li a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin: auto;
+}
+
+#menu li a:hover:after {
+    color: #fff;
+    width: 90%;
+    background-color:rgb(165, 106, 42);
+}
+
+
+/* les section */
+#infos, #competences ,#aproposdemoi ,#formation ,#experiencepro, #projects {
+    background-color:wheat;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding: 1px;
+    padding-left: 5px;
+    box-shadow: 5px 5px 5px  tan;
+}
+
+/* le bas de page  */
+footer {
+    background-image: url('../images/fond.jpg');
+    margin-top: 50px;
+    height: 150px;
+    text-align: center;
+    /* opacity: 0.4; */
+}
+div {
+    text-align: center;
+    height: 150px;
+    background-color: rgba(0, 100, 0, 0.597);
+}
+footer img {
+    margin-top: 20px;
+    margin-right:10px;
+}
+
+
+
+/* les traits de séparation */
+hr {
+    border-top: 1px dotted rgb(203, 133, 47);
+}
+hr.titre {
+    border: 1px solid rgb(150, 97, 31);
+  }
+
+/* mail */
+#infos li a {
+    color: #444444;
+    text-decoration: none;
+
+}
+#infos li a:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin: auto;
+}
+
+/* balise projects */
+#projects article {
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+}
+#projects article h3{
+    text-align: center;
+}
+#projects article img{
+    height: 80%;
+    width: 80%;
+}
+#projects article .appli{
+    height: 40%;
+    width: 40%;
+}
+
+/* progress bar */
+
+meter { 
+    display: flex;   
+    width: 300px;    
+    height: 30px;    
+    border: 1px solid #47747A;    
+    border-radius: 30px;    
+}
+
+meter::-webkit-meter-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: whiteSmoke;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-optimum-value {
+  box-shadow: 0 5px 5px -5px #999 inset;
+  background-image: linear-gradient(
+    90deg, 
+    #ecf3ac 5%,
+    #e6c972 25%,
+    #d4ae4f 55%,
+    #e6c762 100%
+  );
+  background-size: 100% 100%;
+}
