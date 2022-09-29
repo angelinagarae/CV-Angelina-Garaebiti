@@ -19,7 +19,7 @@ h1 {
     font-weight: normal;
     color: rgb(165, 252, 235);
     font-size: 100px;
-    display:block;   
+    display:inline;   
 }
 h1:hover {
     color: wheat;
