@@ -19,7 +19,7 @@ h1 {
     font-weight: normal;
     color: rgb(165, 252, 235);
     font-size: 100px;
-    display:inline;    
+    display:block;   
 }
 h1:hover {
     color: wheat;
@@ -41,6 +41,7 @@ header div {
     height: 100%;
     text-align: center;
     background-color: rgba(0, 100, 0, 0.31);
+    text-align: center;
 }
 header img {
     width: 15%;
@@ -48,9 +49,9 @@ header img {
     opacity: 0.85;
 }
 
-header img,h1 {
+/* header img,h1 {
     display: inline-block;
-}
+} */
 
 /* listes  */
 ul {
