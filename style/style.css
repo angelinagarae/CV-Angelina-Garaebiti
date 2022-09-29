@@ -33,7 +33,7 @@ a {
     padding: 0;
     list-style-type: none;
     text-align: center;
-    background-color: rgba(254, 234, 198, 0.738);
+    background-color: rgba(255, 245, 227, 0.738);
     width: 100%;
     position: fixed;
     
@@ -79,6 +79,11 @@ h1 {
 }
 h1:hover {
     color: wheat;
+}
+#title2 {
+    text-align: center;
+    font-size: 2em;
+    color: whitesmoke;
 }
 
 /* contact */
@@ -146,8 +151,8 @@ p{
 }
 #formation article div {
     position: absolute;
-    top: 1800px;
     width: 250px;
+    top: 200%;
     margin-left: 100px;
     opacity: 0;
     animation: fadeOut 0.3s ease-out;
@@ -174,8 +179,22 @@ p{
 #experiencepro {
     background-color:#b6ffffaa;
     padding: 10px 0px ;
+    text-align: center;
 }
-
+#experiencepro div {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+}
+#experiencepro article img {
+    width: 50%;
+    height: 50%;
+}
+#experiencepro article {
+    display: flex;
+    flex-direction: row;
+}
+ 
 /* competences */
 
 #competences {
@@ -216,9 +235,6 @@ meter::-webkit-meter-optimum-value {
 }
 
 /* les traits de séparation */
-hr {
-    border-top: 1px dotted #008b8b;
-}
 hr.titre {
     border: 1px solid #008b8b;
   }
