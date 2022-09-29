@@ -1,4 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+
+
 body {
     background: linear-gradient(45deg, rgba(248, 196, 122, 0.584), rgba(239, 241, 122, 0.518));
     font-family: 'Montserrat', sans-serif;
@@ -10,13 +14,15 @@ h1, h2{
     text-align: center;
 }
 h1 {
-    font-family: 'Ms Madi', cursive;
-    color: rgb(252, 214, 165);
+    font-family: 'Arizonia', cursive;
+    /* font-family: 'Ms Madi', cursive; */
+    font-weight: normal;
+    color: rgb(165, 252, 235);
     font-size: 100px;
     display:inline;    
 }
 h1:hover {
-    color: white;
+    color: wheat;
 }
 h2 {
     text-transform: uppercase
@@ -49,6 +55,9 @@ header img,h1 {
 /* listes  */
 ul {
     list-style-type: none;
+}
+ul li {
+    font-size: 20px;
 }
 
 
@@ -91,7 +100,7 @@ ul {
     padding: 10px 25px;
     margin-bottom: 5px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 #menu li a:after {
     content: '';
