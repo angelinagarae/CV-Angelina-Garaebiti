@@ -1,92 +1,34 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background: linear-gradient(45deg, rgba(248, 196, 122, 0.584), rgba(239, 241, 122, 0.518));
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-
-
-/* les titre */
-h1, h2{
-    text-align: center;
+ul {
+    margin: 0;
+    padding: 0;
 }
-h1 {
-    font-family: 'Arizonia', cursive;
-    /* font-family: 'Ms Madi', cursive; */
-    font-weight: normal;
-    color: rgb(165, 252, 235);
-    font-size: 100px;
-    display:inline;   
-}
-h1:hover {
-    color: wheat;
+li {
+list-style-type: none;
 }
 h2 {
-    text-transform: uppercase
-}
-
-
-/* le haut de la page */
-header {   
-    background-image: url('../images/fond.jpg');
+    text-transform: uppercase;
     text-align: center;
-    margin-bottom:25px ;
-    height: 20%;
-
+    padding-top: 30px;
+  }
+a {
+    text-decoration: none;
+    color: black;
 }
-header div {
-    height: 100%;
-    text-align: center;
-    background-color: rgba(0, 100, 0, 0.31);
-    text-align: center;
-}
-header img {
-    width: 15%;
-    height: 15%;
-    opacity: 0.85;
-}
-
-/* header img,h1 {
-    display: inline-block;
-} */
-
-/* listes  */
-ul {
-    list-style-type: none;
-}
-ul li {
-    font-size: 20px;
-}
-
-
-/* contact */
-#mes-infos {
-    display: inline-block;
-}
-#mes-infos li {
-    margin-left: 5%;
-    margin-bottom: 10px;
-}
-/* les puces de liste */
-#calendrier {
-    list-style-image: url("../images/calendar.png");
-}
-#telephone {
-    list-style-image: url("../images/telephone.png");
-}
-#adresse {
-    list-style-image: url('../images/home.png');
-}
-#mail {
-    list-style-image: url('../images/mail.png');
-}
-
 
 /* le menu  navbar*/
 #menu {
+    margin-top: 100px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -100,8 +42,7 @@ ul li {
     text-decoration: none;
     padding: 10px 25px;
     margin-bottom: 5px;
-    text-align: center;
-    font-size: 25px;
+    text-align: right;
 }
 #menu li a:after {
     content: '';
@@ -117,86 +58,109 @@ ul li {
     background-color:rgb(165, 106, 42);
 }
 
+/* imageheader */
+header #image-header {
+    padding-top: 60px;
+    background: url('../images/fond.jpg') no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1 {
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: rgb(165, 252, 235);
+    font-size: 6em;
+    margin-top: 100px;
+    text-shadow: 1px 3px 2px black;
+}
+h1:hover {
+    color: wheat;
+}
 
-/* les section */
-#infos, #competences ,#aproposdemoi ,#formation ,#experiencepro, #projects {
-    background-color:#008b8baa;
-    width: 90%;
-    border-radius: 5px;
+/* contact */
+#mes-infos {
+    display: inline-block;
+}
+#mes-infos li {
+    margin-left: 5%;
     margin-bottom: 10px;
-    margin-top: 15px;
-    margin-left: 50px;
-    padding: 1px;
-    padding-left: 5px;
-    box-shadow: 5px 5px 5px  tan;
+}
+
+/* les puces de liste */
+#calendrier {
+    list-style-image: url("../images/calendar.png");
+}
+#telephone {
+    list-style-image: url("../images/telephone.png");
+}
+#adresse {
+    list-style-image: url('../images/home.png');
+}
+#mail {
+    list-style-image: url('../images/mail.png');
+}
+
+/* A PROPOS DE MOI  */
+
+#aproposdemoi {
+    background-color:#b6ffffaa;
+    padding: 10px 0px 100px 0px;
+    height: 300px;
 }
 p{
     font-size: 20px;
+    position: relative;
+    right: 550px;
+}
+#aproposdemoi  img {
+    width: 15%;
+    height: 15%;
+    position: relative;
+}
+#aproposdemoi #moi {
+    float:left;
+    margin-left: 20px;
 }
 
-/* le bas de page  */
-footer {
-    background-image: url('../images/fond.jpg');
-    margin-top: 50px;
-    height: 150px;
+/* formation balises  */
+#formation {
+    background-color:#8bf1f1aa;
+    padding: 10px 0px ;
+}
+#formation #formation-position {
     text-align: center;
-    /* opacity: 0.4; */
+    display: flex;
+    flex-direction: row;
 }
-div {
+#formation article {
     text-align: center;
-    height: 150px;
-    background-color: rgba(0, 100, 0, 0.31);
-}
-footer img {
-    margin-top: 20px;
-    margin-right:10px;
-}
-
-
-
-/* les traits de séparation */
-hr {
-    border-top: 1px dotted #008b8b;
-}
-hr.titre {
-    border: 1px solid #008b8b;
-  }
-
-/* mail */
-#infos li a {
-    color: #444444;
-    text-decoration: none;
-
-}
-#infos li a:after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 0;
-    margin: auto;
-}
-
-/* balise projects */
-#projects {
-    text-align: center;
-}
-#projects article {
-    text-align: center;
-    display: inline-block;
     width: 30%;
 }
-#projects article h3{
-    text-align: center;
+#formation article h3{
     text-decoration:underline;
 }
-#projects article img{
-    height: 80%;
-    width: 80%;
+#formation article img{
+    height: 50%;
+    width: 50%;
 }
-#projects article .appli{
-    height: 40%;
-    width: 40%;
+
+/* experience  */
+
+#experiencepro {
+    background-color:#b6ffffaa;
+    padding: 10px 0px ;
 }
+
+/* competences */
+
+#competences {
+    background-color:#8bf1f1aa;
+    padding: 10px 0px ;
+}
+#competences article {
+    margin-left: 10px;
+}
+
 
 /* progress bar */
 
@@ -209,7 +173,7 @@ meter {
 }
 
 meter::-webkit-meter-bar {
-  background: none; /* Required to get rid of the default background property */
+  background: none;
   background-color: whiteSmoke;
   box-shadow: 0 5px 5px -5px #333 inset;
 }
@@ -224,4 +188,70 @@ meter::-webkit-meter-optimum-value {
     #62d2e6 100%
   );
   background-size: 100% 100%;
+}
+
+/* les traits de séparation */
+hr {
+    border-top: 1px dotted #008b8b;
+}
+hr.titre {
+    border: 1px solid #008b8b;
+  }
+
+.double {
+    border: none;
+    border-top: 3px double rgb(37, 106, 109);
+} 
+
+/* balise projects */
+#projects {
+    background-color:#b6ffffaa;
+    padding: 10px 0px 20px;
+    text-align: center;
+}
+#projects #projet {
+    display: flex;
+    flex-direction: row;
+}
+#projects article {
+    text-align: center;
+    display: inline-block;
+    width: 30%;
+}
+#projects article h3{
+    text-align: center;
+    text-decoration:underline;
+}
+#projects article img{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+/* contact */
+#infos {
+    background-color:#8bf1f1aa;
+    padding: 10px 0px 20px;
+}
+#mes-infos {
+    display: inline-block;
+}
+#mes-infos li {
+    margin-left: 50%;
+    margin-bottom: 10px;
+}
+
+
+/* le bas de page  */
+footer {
+    background-image: url('../images/fond.jpg');
+    margin-top: 50px;
+    height: 150px;
+    text-align: center;
+    color: #fff;
+}
+footer img {
+    background-color:#8bf1f1aa;
+    padding: 10px 0px ;
 }
