@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&display=swap');
-
 body {
-    background: linear-gradient(45deg, rgb(248, 195, 122), rgb(239, 241, 122));
+    background: linear-gradient(45deg, rgba(248, 196, 122, 0.584), rgba(239, 241, 122, 0.518));
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -29,6 +28,7 @@ header {
     background-image: url('../images/fond.jpg');
     text-align: center;
     margin-bottom:25px ;
+    height: 20%;
 
 }
 header div {
@@ -39,12 +39,12 @@ header div {
 header img {
     width: 15%;
     height: 15%;
+    opacity: 0.7;
 }
 
 header img,h1 {
     display: inline-block;
 }
-
 
 /* listes  */
 ul {
@@ -110,7 +110,7 @@ ul {
 
 /* les section */
 #infos, #competences ,#aproposdemoi ,#formation ,#experiencepro, #projects {
-    background-color:wheat;
+    background-color:#008b8baa;
     width: 90%;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -132,7 +132,7 @@ footer {
 div {
     text-align: center;
     height: 150px;
-    background-color: rgba(0, 100, 0, 0.597);
+    background-color: rgba(0, 100, 0, 0.31);
 }
 footer img {
     margin-top: 20px;
@@ -143,10 +143,10 @@ footer img {
 
 /* les traits de séparation */
 hr {
-    border-top: 1px dotted rgb(203, 133, 47);
+    border-top: 1px dotted #008b8b;
 }
 hr.titre {
-    border: 1px solid rgb(150, 97, 31);
+    border: 1px solid #008b8b;
   }
 
 /* mail */
@@ -164,6 +164,9 @@ hr.titre {
 }
 
 /* balise projects */
+#projects {
+    text-align: center;
+}
 #projects article {
     text-align: center;
     display: inline-block;
@@ -171,6 +174,7 @@ hr.titre {
 }
 #projects article h3{
     text-align: center;
+    text-decoration:underline;
 }
 #projects article img{
     height: 80%;
@@ -201,10 +205,10 @@ meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
   background-image: linear-gradient(
     90deg, 
-    #ecf3ac 5%,
-    #e6c972 25%,
-    #d4ae4f 55%,
-    #e6c762 100%
+    #acecf3 5%,
+    #72e6c9 25%,
+    #4fd4c9 55%,
+    #62d2e6 100%
   );
   background-size: 100% 100%;
 }
