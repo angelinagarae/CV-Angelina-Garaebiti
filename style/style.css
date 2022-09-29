@@ -33,16 +33,17 @@ a {
     padding: 0;
     list-style-type: none;
     text-align: center;
-    background-color: rgba(255, 245, 227, 0.738);
+    background-color:rgb(60,65,63);
     width: 100%;
     position: fixed;
     
 }
 #menu li {
     display: inline-block;
+    padding-top: 10px;
 }
 #menu li a {
-    color: #444444;
+    color: #ffffff;
     text-decoration: none;
     padding: 10px 25px;
     margin-bottom: 5px;
@@ -112,7 +113,7 @@ h1:hover {
 /* A PROPOS DE MOI  */
 
 #aproposdemoi {
-    background-color:#b6ffffaa;
+    background-color:#E8EADC;
     padding-left: 20px;
     padding-bottom: 10px;
 }
@@ -131,7 +132,7 @@ p{
 
 /* formation balises  */
 #formation {
-    background-color:#8bf1f1aa;
+    background-color:#E8EADC;
     padding: 10px 0px ;
 }
 #formation #formation-position {
@@ -177,7 +178,7 @@ p{
 /* experience  */
 
 #experiencepro {
-    background-color:#b6ffffaa;
+    background-color:#E8EADC;
     padding: 10px 0px ;
     text-align: center;
 }
@@ -198,7 +199,7 @@ p{
 /* competences */
 
 #competences {
-    background-color:#8bf1f1aa;
+    background-color:#E8EADC;
     padding: 10px 0px ;
 }
 #competences article {
@@ -213,7 +214,7 @@ meter {
     width: 300px;    
     height: 30px;    
     border: 1px solid #47747A;    
-    border-radius: 30px;    
+    border-radius: 30px; 
 }
 
 meter::-webkit-meter-bar {
@@ -226,17 +227,17 @@ meter::-webkit-meter-optimum-value {
   box-shadow: 0 5px 5px -5px #999 inset;
   background-image: linear-gradient(
     90deg, 
-    #acecf3 5%,
-    #72e6c9 25%,
-    #4fd4c9 55%,
-    #62d2e6 100%
+    #7C8F54 5%,
+    #687847 25%,
+    #515d37 55%,
+    #2f3620 100%
   );
   background-size: 100% 100%;
 }
 
 /* les traits de séparation */
 hr.titre {
-    border: 1px solid #008b8b;
+    border: 1px solid #7C8F54;
   }
 
 .double {
@@ -246,7 +247,7 @@ hr.titre {
 
 /* balise projects */
 #projects {
-    background-color:#b6ffffaa;
+    background-color:#E8EADC;
     padding: 10px 0px 20px;
     text-align: center;
 }
@@ -271,7 +272,7 @@ hr.titre {
 
 /* contact */
 #infos {
-    background-color:#8bf1f1aa;
+    background-color:#E8EADC;
     padding: 10px 0px 20px;
 }
 #mes-infos {
