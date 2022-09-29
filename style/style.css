@@ -104,21 +104,19 @@ h1:hover {
 
 #aproposdemoi {
     background-color:#b6ffffaa;
-    padding: 10px 0px 100px 0px;
-    height: 300px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 p{
     font-size: 20px;
-    position: relative;
     right: 550px;
+
 }
 #aproposdemoi  img {
     width: 15%;
     height: 15%;
-    position: relative;
 }
 #aproposdemoi #moi {
-    float:left;
     margin-left: 20px;
 }
 
@@ -134,55 +132,37 @@ p{
 }
 #formation article {
     text-align: center;
-<<<<<<< HEAD
-    height: 150px;
-    background-color: rgba(0, 100, 0, 0.31);
-}
-footer img {
-    margin-top: 20px;
-}
-
-
-
-/* les traits de séparation */
-hr {
-    border-top: 1px dotted #008b8b;
-}
-hr.titre {
-    border: 1px solid #008b8b;
-  }
-
-/* mail */
-#infos li a {
-    color: #444444;
-    text-decoration: none;
-
-}
-#infos li a:after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 0;
-    margin: auto;
-}
-
-/* balise projects */
-#projects {
-    text-align: center;
-}
-#projects article {
-    text-align: center;
-    display: inline-block;
-=======
->>>>>>> e037879c4725d4166dcb3a36cedace163ace772b
     width: 30%;
 }
 #formation article h3{
     text-decoration:underline;
 }
 #formation article img{
-    height: 50%;
-    width: 50%;
+    width: 80%;
+}
+#formation article div {
+    position: absolute;
+    top: 1800px;
+    width: 250px;
+    margin-left: 100px;
+    opacity: 0;
+    animation: fadeOut 0.3s ease-out;
+    color: white;
+    background-color: rgba(51, 51, 51, 0.604);
+}
+#formation article div:hover {
+    animation: fadeIn 0.2S ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity:1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity: 1;}
 }
 
 /* experience  */
@@ -264,7 +244,6 @@ hr.titre {
     text-decoration:underline;
 }
 #projects article img{
-    height: 80%;
     width: 80%;
 }
 
