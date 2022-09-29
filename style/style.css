@@ -91,7 +91,7 @@ ul {
     padding: 10px 25px;
     margin-bottom: 5px;
     text-align: center;
-
+    font-size: 30px;
 }
 #menu li a:after {
     content: '';
@@ -119,6 +119,9 @@ ul {
     padding: 1px;
     padding-left: 5px;
     box-shadow: 5px 5px 5px  tan;
+}
+p{
+    font-size: 20px;
 }
 
 /* le bas de page  */
