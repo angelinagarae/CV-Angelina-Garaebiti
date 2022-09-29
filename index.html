@@ -7,55 +7,79 @@
 </head>
 <body>
     <header>
-        <div>
-            <img src="./images/moi.png" alt="MOI">        
-            <h1>Angelina Garaebiti</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#aproposdemoi">A Propos de moi</a></li>
+                <li><a href="#formation">Formation</a></li>
+                <li><a href="#experiencepro">Expérience Professionnelle</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#mes-infos">Contacts</a></li>
+            </ul>
+        </nav>
+        <div id="image-header">
+            <div id="image-transparent">
+                <h1>Angelina Garaebiti</h1>
+            </div>
         </div>
     </header>
-    <nav>
-        <ul id="menu">
-            <li><a href="#aproposdemoi">A Propos de moi</a></li>
-            <li><a href="#formation">Formation</a></li>
-            <li><a href="#experiencepro">Expérience Professionnelle</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#mes-infos">Contacts</a></li>
-        </ul>
-    </nav>
+
     <section id="aproposdemoi">
         <h2>A propos de moi :</h2>
         <hr class="titre">
-        <article>
+        <article id="moi">
+            <img src="./images/moi.jpg" alt="photo de moi">
+        </article>
+        <article id="presentation">
             <p>J'ai toujours été bercé par Internet. Creative de nature et très curieuse, je suis toujours à la recherche de nouvelle expérience et de nouvelle choses à essayer. Je sais aussi bien travailler en autonomie mais aussi en equipe, ce qui est primordiale dans notre métier.</p>
         </article>
     </section>
+    <hr class="double">
     <section id="formation">
         <h2>Formation :</h2>
         <hr class="titre">
-        <article>
-            <h3>Titre Professionnel Developpeur Web / Web Mobile, CCI CFA</h3>
-            <h4>Octobre 2022 - </h4>
-            <p>en cours</p>
-        </article>
-        <hr>
-        <article>
-            <h3>Licence Informatique - TREC 7, UNC</h3>
-            <h4>Février 2021 - Juin 2022</h4>
-            <p>à Niveau</p>
-        </article>
-        <hr>
-        <article>
-            <h3>DUT Multimédia et Metier de l'Internet (MMI), IUT</h3>
-            <h4>Fevrier 2020 - Decembre 2020</h4>
-            <p>à Niveau</p>
-        </article>
-        <hr>
-        <article>
-            <h3>Baccalauréat STI2D option ITEC, Lycée Jules Garnier</h3>
-            <h4>Fevrier 2017 - Decembre 2018</h4>
-            <p>Obtenu avex mention Bien</p>
-        </article>
+        <div id="formation-position">
+            <article>
+                <img src="./images/cci.png" alt="Logo cci">
+                <div>
+                    <h3>Titre Professionnel Developpeur Web / Web Mobile, CCI CFA</h3>
+                    <h4>Octobre 2022 - </h4>
+                    <p>en cours</p>
+                </div>
+            </article>
+            <hr>
+            <article>
+                <img src="./images/unc.jpg" alt="Logo unc">
+                <div>
+                   <h3>Licence Informatique - TREC 7, UNC</h3>
+                    <h4>Février 2021 - Juin 2022</h4>
+                    <p>à Niveau</p>
+                </div>
+
+            </article>
+            <hr>
+            <article>
+                <img src="./images/iut.jpg" alt="Logo iut">
+                <div>
+                    <h3>DUT Multimédia et Metier de l'Internet (MMI), IUT</h3>
+                    <h4>Fevrier 2020 - Decembre 2020</h4>
+                    <p>à Niveau</p>
+                </div>
+
+            </article>
+            <hr>
+            <article>
+                <img src="./images/ljg.jpg" alt="Logi ljg">
+                <div>
+                    <h3>Baccalauréat STI2D option ITEC, Lycée Jules Garnier</h3>
+                    <h4>Fevrier 2017 - Decembre 2018</h4>
+                    <p>Obtenu avex mention Bien</p>
+                </div>
+            </article>
+        </div>
+
     </section>
+    <hr class="double">
     <section id="experiencepro">
         <h2>Experience :</h2>
         <hr class="titre">
@@ -76,6 +100,7 @@
             </ul>
         </article>
     </section>
+    <hr class="double">
     <section id="competences">
         <h2>Compétences :</h2>
         <hr class="titre">
@@ -130,30 +155,30 @@
             </ul>           
         </article>
     </section>
+    <hr class="double">
     <section id="projects">
         <h2>Mes Projets :</h2>
         <hr class="titre">
-        <article>
-            <h3>Lecteur Musiques</h3>
-            <a href="https://angelinag1.github.io/MP3_Angelina/"><img src="./images/mp3.jpg" alt="lecteur"></a>
-            <p>Développer un Lecteur de musique</p>
-        </article>
-        <article>
-            <h3>Formulaire</h3>
-            <a href="https://angelinag1.github.io/Formulaire-d-enregistrement/"><img  src="./images/Form.PNG" alt="formulaire"></a>
-            <p>Faire un Formulaire personnalisé et mettre des paramètres</p>
-        </article>
-        <article>
-            <h3>Prototype appli</h3>
-            <img class="appli" src="./images/a.PNG" alt="APPLI">
-            <p>Faire un prototype (html css) d'application</p>
-        </article>
-        <article>
-            <h3>Projets site Wix</h3>
-            <a href="https://angelinagaraebiti2.wixsite.com/angelinagscuisine"><img src="./images/wixs.PNG" alt="WIX"></a>
-            <p>realiser un site web sur un CMS/p>
-        </article>
+        <div id="projet">
+            <article>
+                <h3>Lecteur Musiques</h3>
+                <a href="https://angelinag1.github.io/MP3_Angelina/"><img src="./images/mp3.jpg" alt="lecteur"></a>
+            </article>
+            <article>
+                <h3>Formulaire</h3>
+                <a href="https://angelinag1.github.io/Formulaire-d-enregistrement/"><img  src="./images/Form.PNG" alt="formulaire"></a>
+            </article>
+            <article>
+                <h3>Prototype appli</h3>
+                <img class="appli" src="./images/a.PNG" alt="APPLI">
+            </article>
+            <article>
+                <h3>Projets site Wix</h3>
+                <a href="https://angelinagaraebiti2.wixsite.com/angelinagscuisine"><img src="./images/wixs.PNG" alt="WIX"></a>
+            </article>
+        </div>
     </section>
+    <hr class="double">
     <section id="infos">
         <h2>Mes Coordonnées</h2>
         <hr class="titre">
