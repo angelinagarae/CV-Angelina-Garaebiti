@@ -36,6 +36,7 @@ a {
     background-color:rgb(60,65,63);
     width: 100%;
     position: fixed;
+    z-index : 10;
     
 }
 #menu li {
@@ -128,6 +129,15 @@ p{
 }
 #aproposdemoi #moi {
     margin-left: 20px;
+}
+
+#aproposdemoi button {
+    background-color: transparent;
+    color: black;
+    font-family:'Montserrat', sans-serif ;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    margin-left: 50%;
 }
 
 /* formation balises  */
@@ -295,4 +305,11 @@ footer {
 footer img {
     background-color:#8bf1f1aa;
     padding: 10px 0px ;
+}
+
+/* lettre de motivation */
+#lettre {
+    background-color:#E8EADC;
+    padding: 10px 0px ;
+    text-align: center;
 }
