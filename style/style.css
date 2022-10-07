@@ -64,6 +64,10 @@ a {
     background-color:rgb(165, 106, 42);
 }
 
+section {
+    margin-bottom: 15px;
+}
+
 /* imageheader */
 header #image-header {
     padding-top: 60px;
@@ -153,19 +157,20 @@ p{
 }
 #formation article {
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
 #formation article h3{
     text-decoration:underline;
 }
 #formation article img{
-    width: 80%;
+    width: 70%;
 }
 #formation article div {
-    position: absolute;
+    /* position: absolute;
     width: 250px;
-    top: 200%;
-    margin-left: 100px;
+    top: 200%; */
+    margin-left: 50px;
+    width: 450px;
     opacity: 0;
     animation: fadeOut 0.3s ease-out;
     color: white;
@@ -196,15 +201,16 @@ p{
 #experiencepro div {
     display: flex;
     flex-direction: row;
-    width: 1000px;
+    margin-left: 100px;
 }
 #experiencepro article img {
     width: 50%;
-    height: 50%;
+    height: 80%;
+    margin-left: 10px;
 }
 #experiencepro article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
  
 /* competences */
