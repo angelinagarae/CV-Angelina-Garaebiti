@@ -196,19 +196,17 @@ p{
 #experiencepro {
     background-color:#E8EADC;
     padding: 10px 0px ;
-    text-align: center;
 }
 #experiencepro div {
-    display: flex;
-    flex-direction: row;
-    margin-left: 100px;
+    width: 500px;
+    margin-left: 10px;
 }
 #experiencepro article img {
     width: 50%;
     height: 80%;
     margin-left: 10px;
 }
-#experiencepro article {
+#experiencepro article, div{
     display: flex;
     flex-direction: column;
 }
