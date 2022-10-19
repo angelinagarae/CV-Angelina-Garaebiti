@@ -36,6 +36,7 @@ a {
     background-color:rgb(60,65,63);
     width: 100%;
     position: fixed;
+    z-index: 1;
     
 }
 #menu li {
