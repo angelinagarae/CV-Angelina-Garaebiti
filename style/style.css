@@ -64,6 +64,10 @@ a {
     background-color:rgb(165, 106, 42);
 }
 
+section {
+    margin-bottom: 15px;
+}
+
 /* imageheader */
 header #image-header {
     padding-top: 60px;
@@ -131,6 +135,16 @@ p{
     margin-left: 20px;
 }
 
+#aproposdemoi button {
+    background-color: transparent;
+    color: black;
+    font-family:'Montserrat', sans-serif ;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    margin-left: 45%;
+
+}
+
 /* formation balises  */
 #formation {
     background-color:#E8EADC;
@@ -143,19 +157,20 @@ p{
 }
 #formation article {
     text-align: center;
-    width: 30%;
+    width: 25%;
 }
 #formation article h3{
     text-decoration:underline;
 }
 #formation article img{
-    width: 80%;
+    width: 70%;
 }
 #formation article div {
-    position: absolute;
+    /* position: absolute;
     width: 250px;
-    top: 200%;
-    margin-left: 100px;
+    top: 200%; */
+    margin-left: 50px;
+    width: 450px;
     opacity: 0;
     animation: fadeOut 0.3s ease-out;
     color: white;
@@ -181,20 +196,19 @@ p{
 #experiencepro {
     background-color:#E8EADC;
     padding: 10px 0px ;
-    text-align: center;
 }
 #experiencepro div {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
+    width: 500px;
+    margin-left: 10px;
 }
 #experiencepro article img {
     width: 50%;
-    height: 50%;
+    height: 80%;
+    margin-left: 10px;
 }
-#experiencepro article {
+#experiencepro article, div{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
  
 /* competences */
@@ -296,4 +310,11 @@ footer {
 footer img {
     background-color:#8bf1f1aa;
     padding: 10px 0px ;
+}
+
+/* lettre de motivation */
+#lettre {
+    background-color:#E8EADC;
+    padding: 10px 0px ;
+    text-align: center;
 }
