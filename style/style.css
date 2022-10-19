@@ -131,6 +131,7 @@ p{
 #aproposdemoi  img {
     width: 15%;
     height: 15%;
+    float: inline-start;
 }
 #aproposdemoi #moi {
     margin-left: 20px;
@@ -142,7 +143,7 @@ p{
     font-family:'Montserrat', sans-serif ;
     padding: 10px;
     border: 2px solid #4CAF50;
-    margin-left: 45%;
+    text-align: center;
 
 }
 
@@ -262,10 +263,20 @@ hr.titre {
 } 
 
 /* balise projects */
+
 #projects {
     background-color:#E8EADC;
     padding: 10px 0px 20px;
     text-align: center;
+}
+#projects button {
+    background-color: transparent;
+    color: black;
+    font-family:'Montserrat', sans-serif ;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    text-align: center;
+
 }
 #projects #projet {
     display: flex;
