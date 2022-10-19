@@ -121,6 +121,7 @@ h1:hover {
     background-color:#E8EADC;
     padding-left: 20px;
     padding-bottom: 10px;
+    position: relative;
 }
 p{
     font-size: 20px;
@@ -149,6 +150,7 @@ p{
 #formation {
     background-color:#E8EADC;
     padding: 10px 0px ;
+    position: relative;
 }
 #formation #formation-position {
     text-align: center;
@@ -166,11 +168,10 @@ p{
     width: 70%;
 }
 #formation article div {
-    /* position: absolute;
+    position: absolute;
     width: 250px;
-    top: 200%; */
+    top: 130px;
     margin-left: 50px;
-    width: 450px;
     opacity: 0;
     animation: fadeOut 0.3s ease-out;
     color: white;
