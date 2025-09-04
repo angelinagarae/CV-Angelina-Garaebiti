@@ -1,183 +1,368 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mon CV</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <meta charset="UTF-8" />
+    <title>CV - Angélina Garaebiti</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons.min.js"></script>
+
 </head>
-<body>
-    <header>
-        <nav>
-            <ul id="menu">
-                <li><a href="#aproposdemoi">A Propos de moi</a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#experiencepro">Expérience Professionnelle</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
-                <li><a href="#mes-infos">Contacts</a></li>
-            </ul>
-        </nav>
-        <div id="image-header">
-            <div id="image-transparent">
-                <h1>Angelina Garaebiti</h1>
-                <h2 id="title2">Recherche un poste de Developpeur Web en Alternance</h2>
-            </div>
-        </div>
-    </header>
 
-    <section id="aproposdemoi">
-        <h2>A propos de moi :</h2>
-        <hr class="titre">
-            <div style="float: left ;"><img src="./images/moi.jpg" alt="photo de moi"></div>
-            <p>
-                Ayant toujours été dans un cursus dans l'Informatique, j'y ai cultivé l'envie de devenir
-                Développeur Web. La curiosité, l'autonomie et la l'esprit d'equipe sont les clés pour devenir un bon développeur web.<br>Je recherches un poste de Développeur Web en Alternance pour 
-                préparer un Diplôme Professionnel Développeur Web et Web Mobile ( de niveau 5 ) .
-            </p>
-            <a href="./images/CV_2022-09-25_Angélina_Garaebiti.pdf"><button>Mon Curriculum Vitae</button></a>
-            <a href="./lm.html"><button>Ma Lettre de Motivation</button></a>
-    </section>
-    <section id="formation">
-        <h2>Formation :</h2>
-        <hr class="titre">
-        <div id="formation-position">
-            <article>
-                <img src="./images/cci.jpg" alt="Logo cci">
-                <div>
-                    <h3>Titre Professionnel <br> Developpeur Web / Web Mobile, <br> CCI CFA</h3>
-                    <h4>Octobre 2022 - </h4>
-                    <p>en cours</p>
-                </div>
-            </article>
-            <article>
-                <img src="./images/unc.jpg" alt="Logo unc">
-                <div>
-                   <h3>Licence Informatique,<br> UNC</h3>
-                    <h4>Février 2021 - Juin 2022</h4>
-                    <p>à Niveau</p>
-                </div>
+<body data-bs-spy="scroll" data-bs-target="#navbarNavDropdown" data-bs-offset="70" tabindex="0">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light menu ">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#hero">
+                    <img src="./images/logo_ag.png" alt="Logo d'Angelina Garaebiti" class="logo" style="height: 50px" />
+                </a>
 
-            </article>
-            <article>
-                <img src="./images/iut.jpg" alt="Logo iut">
-                <div>
-                    <h3>DUT Multimédia et Metier de l'Internet (MMI),<br> IUT</h3>
-                    <h4>Fevrier 2020 - Decembre 2020</h4>
-                    <p>à Niveau</p>
-                </div>
+                <!-- Bouton pour menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            </article>
-            <article>
-                <img src="./images/ljg.jpg" alt="Logi ljg">
-                <div>
-                    <h3>Baccalauréat STI2D option ITEC, Lycée Jules Garnier</h3>
-                    <h4>Fevrier 2017 - Decembre 2018</h4>
-                    <p>Obtenu avex mention Bien</p>
-                </div>
-            </article>
-        </div>
-
-    </section>
-    <section id="experiencepro">
-        <h2>Experience :</h2>
-        <hr class="titre">
-        <div>
-            <article>
-                <img src="./images/gifi.png" alt="Logo Gifi" id="gifi">
-                <div>
-                    <h3>Vendeuse (job d'été), Gifi NC</h3>
-                    <ul>
-                        <li>Rangement de rayon</li>
-                        <li>Ecoute Clients</li>
-                        <li>Etiquetage</li>
+                <!-- Liens du menu -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="#aboutme" class="nav-link">À propos de moi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#education" class="nav-link">Formation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#work" class="nav-link">Expérience professionnelle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#skill" class="nav-link">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
                     </ul>
                 </div>
-                
-            </article>
-            <article>
-                <img src="./images/ncgraph.jpg" alt="Logo NCGraph">
-                <div>
-                    <h3>Stagiaire Infographiste, NCGraph</h3>
-                    <ul>
-                        <li>Realiser des posters</li>
-                        <li>Planning</li>
-                    </ul> 
-                </div>
-            </article>
-        </div>
-    </section>
-    <section id="competences">
-        <h2>Compétences :</h2>
-        <hr class="titre">
-        <article>
-            <ul>
-                <li>
-                    <h3>Langage Informatique :</h3>
-                    <ol>
-                        <li>
-                            HTML
-                            <meter max="5" value="4"></meter>
-                        </li>
-                        <li>CSS
-                            <meter max="5" value="4"></meter>
-                        </li>
-                        <li>JavaScript
-                            <meter max="5" value="3"></meter>
-                        </li>
-                        <li>Python
-                            <meter max="5" value="3"></meter>
-                        </li>
-                        <li>MySQL
-                            <meter max="5" value="2"></meter>
-                        </li>
-                    </ol>
-                </li>
-                <li>
-                    <h3>Suite Adobe :</h3>
-                    <ol>
-                        <li>Illustrator
-                            <meter max="5" value="4"></meter>
-                        </li>
-                        <li>PhotoShop 
-                            <meter max="5" value="4"></meter>
-                        </li>
-                        <li>Premiere Pro 
-                            <meter max="5" value="3"></meter>
-                        </li>
-                    </ol>
-                </li>
-                <li>
-                    <h3>Pack Offices : </h3>
-                    <ol>
-                        <li>Words</li>
-                        <li>Powerpoint</li>
-                        <li>Excel</li>
-                    </ol>
-                </li>
+            </div>
+        </nav>
+    </header>
 
-            </ul>           
-        </article>
-    </section>
-    <section id="projects">
-        <h2>Mes Projets :</h2>
-        <a href="./projet.html"><button>Mes Projets</button></a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero d-flex align-items-center text-center text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-3 fw-bold">Angelina Garaebiti</h1>
+                    <h2 class="lead fs-3">Designer Graphique et Web (en alternance)</h2>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-success btn-lg flex-fill">Me contacter</a>
+                        <a href="https://bento.me/angelina-garaebiti" class="btn btn-outline-light btn-lg"
+                            target="_blank" rel="noopener">Voir mon
+                            Portfolio</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    <section id="infos">
-        <h2>Mes Coordonnées</h2>
-        <hr class="titre">
-        <ul id="mes-infos">
-            <li id="calendrier">01/10/2000</li>
-            <li id="mail"><a href="mailto:angelina.garaebiti2000@gmail.com">angelina.garaebiti2000@gmail.com</a></li>
-            <li id="adresse">10 Rue Bichat,<br>res Ensemble Latin,<br> 98800 Nouméa</li>
-            <li id="telephone">89.73.48</li>
-        </ul>
+
+    <section class="container mt-5" id="aboutme">
+        <div class="row g-4 py-5 align-items-stretch">
+            <!-- Colonne image -->
+            <div class="col-md-2 col-sm-4 col-xs-5 d-flex">
+                <img class="img-thumbnail rounded w-100 object-fit-contain" src="./images/angelina_garaebiti.jpg"
+                    alt="Angelina Garaebiti" />
+            </div>
+
+            <!-- Colonne texte -->
+            <div class="col-md-10 col-sm-8 col-xs-7 d-flex flex-column justify-content-between">
+                <div>
+                    <h2>A propos de moi</h2>
+                    <p>Bonjour, je m'appelle Angélina. Je suis passionnée par le web et le design graphique, et j'adore
+                        transformer des idées en projets concrets et visuellement impactants.<br />
+                        Curieuse et créative, j'aime apprendre continuellement, relever des défis et apporter des
+                        solutions qui font vraiment la différence. Pour moi, chaque projet est l'occasion de mêler
+                        esthétique et fonctionnalité, tout en gardant une approche humaine et conviviale.
+                    </p>
+                </div>
+
+                <!-- Boutons -->
+                <div class="d-flex flex-wrap gap-3 mt-3">
+                    <a href="./images/CV_2022-09-25_Angélina_Garaebiti.pdf" download
+                        class="btn btn-success btn-lg flex-fill">
+                        📄 Télécharger mon CV
+                    </a>
+                    <a target="_blank" href="https://bento.me/angelina-garaebiti"
+                        class="btn btn-outline-dark btn-lg flex-fill" rel="noopener">
+                        📚 Voir mon portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/ang%C3%A9lina-garaebiti-249a351b5/"><img src="./images/linkedin.png" alt="icon linkedin"></a>
-            <p>By Angelina Garaebiti</p>
+    <section class="container mt-5" id="education">
+        <h2>Mon parcours de formation</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="education-cards"></div>
+    </section>
+
+    <section class="container mt-5" id="work">
+        <h2>Mes expériences Professionnels</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4" id="work-cards"></div>
+    </section>
+    <section class="container mt-5" id="skill">
+        <h2>Compétences</h2>
+        <div class="row">
+            <div class=" col-md-4 col-sm-4">
+                <h4>Langages de programmation</h4>
+                <div id="progress-programming-container"></div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h4>Logiciel</h4>
+                <div id="progress-software-container"></div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <h4>Savoir</h4>
+                <div id="progress-knowledge-container"></div>
+            </div>
+        </div>
+    </section>
+    <section class="container mt-5" id="contact">
+        <h2 class="mb-4">Contact</h2>
+        <div class="row">
+            <!-- Colonne gauche : coordonnées -->
+            <div class="col-md-4 mb-4">
+                <div class="p-4 border rounded shadow-sm bg-light h-100">
+                    <h4>Mes coordonnées</h4>
+                    <p><strong>Email :</strong>angélina.garaebiti.pro@gmail.com</p>
+                    <p><strong>Téléphone :</strong> +687 89 73 48</p>
+                    <p><strong>Adresse :</strong><br>
+                        Nouméa, Nouvelle-Calédonie
+                    </p>
+                </div>
+            </div>
+
+            <!-- Colonne droite : formulaire -->
+            <div class="col-md-8">
+                <form action="https://formspree.io/f/movnkozk" method="POST"
+                    class="p-4 border rounded shadow-sm bg-light">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Votre email :</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="nom@exemple.com"
+                            required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Votre message :</label>
+                        <textarea class="form-control" id="message" name="message" rows="4"
+                            placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-success w-100">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-white">
+        <div class="container">
+            <section class="mt-5">
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#aboutme" class="text-white">A propos de moi</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#education" class="text-white">Formation</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#work" class="text-white">Expérience professionnelle</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#skill" class="text-white">Compétences</a>
+                        </h6>
+                    </div>
+                    <div class="col-md-2">
+                        <h6 class="text-uppercase font-weight-bold">
+                            <a href="#contact" class="text-white">Contact</a>
+                        </h6>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-5" />
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p>Merci d’être passé(e) ! Si tu veux parler web, design ou juste dire bonjour, je suis là</p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mb-5">
+                <a href="https://www.linkedin.com/in/ang%C3%A9lina-garaebiti-249a351b5/" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Angelinag1" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+        </div>
+        <div class="copyright" class="text-center p-4">
+            © 2025 Copyright: Angélina Garaebiti
         </div>
     </footer>
+
+    <script>
+        // Fonction pour générer des cartes
+        function generateCards(containerId, cardsData) {
+            const container = document.getElementById(containerId);
+            cardsData.forEach((card) => {
+                const col = document.createElement("div");
+                col.className = "col-md-4 col-sm-6 col-xs-12";
+
+                col.innerHTML = `
+                <div class="card h-100">
+                    <img src="${card.img}" class="card-img-top" alt="${card.alt}">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${card.title}</h5>
+                        <h6>${card.dates}</h6>
+                        <p class="card-text flex-grow-1">${card.description}</p>
+                    </div>
+                </div>
+            `;
+                container.appendChild(col);
+            });
+        }
+
+        function generateProgress(containerId, progressData) {
+            const container = document.getElementById(containerId);
+
+            progressData.forEach((progress) => {
+                const row = document.createElement("div");
+                row.className = "row mb-3 align-items-center"; // espacement + centrage vertical
+
+                row.innerHTML = `
+                <div class="col-md-3 col-sm-6 d-flex align-items-center">
+                     ${progress.icon}
+                </div>
+                <div class="col-md-9 col-sm-6">
+                  <h6 class="mb-0 fw-bold">${progress.item}</h6>
+                </div>
+
+
+        `;
+
+                container.appendChild(row);
+            });
+        }
+
+        // Données Éducation
+        const educationCardsData = [
+            {
+                img: "https://ecoledudesign.nc/wp-content/uploads/2022/07/ED-LOGO-SLOGAN.png",
+                alt: "logo Ecole du design NC",
+                title: "Bachelor design graphique et web",
+                dates: "Mars 2025 - Decembre 2026 (en cours)",
+                description:
+                    "Compétences en Communication visuel, maîtrise des outils de design graphique, web design, développement web et marketing digital.",
+            },
+            {
+                img: "https://www.cfa.cci.nc/sites/default/files/inline-images/LOGO-CCI-alternance_vOK.jpg",
+                alt: "Logo les ecoles de la cci",
+                title: "Titre Professionnel - Developpeur Web / Web Mobile<br>(Obtenu)",
+                dates: "Octobre 2022 - Decembre 2023",
+                description:
+                    "Compétences en gestion de projet web, maquettage de site, en Développement Front-end et Back-end et développement de site sous CMS.",
+            },
+            {
+                img: "https://commande.ipc.nc/wp-content/uploads/2024/12/LOGO_LJG.jpg",
+                alt: "Logo Lycée Jules Garnier",
+                title:
+                    "Baccalauréat STI2D option ITEC, Lycée Jules Garnier<br>Obtenu avec mention bien)",
+                dates: "Fevrier 2017 - Decembre 2018",
+                description:
+                    "Formation scientifique et technologique avec développement de compétences en innovation technique, conception d'objet et gestion de projets technologiques.",
+            },
+        ];
+
+        // Données Experience
+        const workCardsData = [
+            {
+                img: "https://numerique.gouv.nc/sites/default/files/atoms/files/logo.svg",
+                alt: "logo DINUM",
+                title: "Designer UI (en alternance)",
+                dates: "Mars 2025 (en cours)",
+                description:
+                    "Réalisation d'outils avec les données en open data de la Nouvelle-Calédonie, promotion et maquettes de pages web.",
+            },
+            {
+                img: "https://numerique.gouv.nc/sites/default/files/atoms/files/logo.svg",
+                alt: "logo DINUM",
+                title: "Développeur Web (CDD)",
+                dates: "Fevrier 2024 - Decembre 2024",
+                description:
+                    "Réalisation d'outils avec les données en open data, promotion et maquettes de pages web.",
+            },
+            {
+                img: "https://numerique.gouv.nc/sites/default/files/atoms/files/logo.svg",
+                alt: "logo DINUM",
+                title: "Développeur Web (en alternance)",
+                dates: "Décembre 2022 - Decembre 2023",
+                description:
+                    "Réalisation d'outils avec les données en open data, promotion et maquettes de pages web.",
+            },
+        ];
+        const programData = [
+            { icon: "<i class='fa-brands fa-html5'></i>", item: "HTML"},
+            { icon: "<i class='fa-brands fa-css3-alt'></i>", item: "CSS"},
+            { icon: "<i class='fa-brands fa-js'></i>", item: "JavaScript"},
+            { icon: "<i class='fa-solid fa-database'></i>", item: "SQL"},
+            { icon: "<i class='fa-brands fa-php'></i>", item: "PHP"},
+            { icon: "<i class='fa-brands fa-python'></i>", item: "Python"}
+        ];
+
+        const softwareData = [
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/5968/5968535.png' width='24' alt='Illustrator'>", item: "Adobe Illustrator" },
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/5968/5968572.png' width='24' alt='Photoshop'>", item: "Adobe Photoshop" },
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/5968/5968535.png' width='24' alt='Indesign'>", item: "Adobe Indesign"},
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/5968/5968575.png' width='24' alt='Premiere Pro'>", item: "Adobe Premiere Pro"},
+             ];
+
+
+
+        const knowledgeData = [
+            { icon: "<i class='fa-solid fa-code'></i>", item: "Développement web" },
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/16938/16938137.png' width='24' alt='Conception site'>", item: "Conception site"},
+            {  icon: "<img src='https://cdn-icons-png.flaticon.com/128/4946/4946385.png' width='24' alt='Premiere Pro'>", item: "Gestion de projet"},
+            { icon: "<img src='https://cdn-icons-png.flaticon.com/128/3159/3159310.png' width='24' alt='Premiere Pro'>", item: "Communication visuelle" },
+            {  icon: "<img src='https://cdn-icons-png.flaticon.com/128/1997/1997928.png' width='24' alt='Premiere Pro'>",item: "Marketing Digitale" },
+        ];
+
+        // Génération des cartes
+        generateCards("education-cards", educationCardsData);
+        generateCards("work-cards", workCardsData);
+        generateProgress("progress-programming-container", programData);
+        generateProgress("progress-software-container", softwareData);
+        generateProgress("progress-knowledge-container", knowledgeData);
+    </script>
 </body>
-</html> 
+
+</html>

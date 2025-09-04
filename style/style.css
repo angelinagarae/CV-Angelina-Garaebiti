@@ -1,335 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ms+Madi&display=swap');
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-li {
-list-style-type: none;
-}
-h2 {
-    text-transform: uppercase;
-    text-align: center;
-    padding-top: 30px;
-  }
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* le menu  navbar*/
-#menu {
-    margin-top: 100px;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    background-color:rgb(60,65,63);
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    
-}
-#menu li {
-    display: inline-block;
-    padding-top: 10px;
-}
-#menu li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 25px;
-    margin-bottom: 5px;
-    text-align: right;
-}
-#menu li a:after {
-    content: '';
-    display: block;
-    height: 1px;
-    width: 0;
-    margin: auto;
-}
-
-#menu li a:hover:after {
-    color: #fff;
-    width: 90%;
-    background-color:rgb(165, 106, 42);
-}
-
-section {
-    margin-bottom: 15px;
-}
-
-/* imageheader */
-header #image-header {
-    padding-top: 60px;
-    background: url('../images/fond.jpg') no-repeat fixed 50% 50%;
-    background-size: cover;
-    height: 799px;
-}
-h1 {
-    font-family: 'Ms Madi', cursive;
-    text-align: center;
-    color: rgb(165, 252, 235);
-    font-size: 6em;
-    margin-top: 100px;
-    text-shadow: 1px 3px 2px black;
-}
-h1:hover {
-    color: wheat;
-}
-#title2 {
-    text-align: center;
-    font-size: 2em;
-    color: whitesmoke;
-}
-
-/* contact */
-#mes-infos {
-    display: inline-block;
-}
-#mes-infos li {
-    margin-left: 5%;
-    margin-bottom: 10px;
-}
-
-/* les puces de liste */
-#calendrier {
-    list-style-image: url("../images/calendar.png");
-}
-#telephone {
-    list-style-image: url("../images/telephone.png");
-}
-#adresse {
-    list-style-image: url('../images/home.png');
-}
-#mail {
-    list-style-image: url('../images/mail.png');
-}
-
-/* A PROPOS DE MOI  */
-
-#aproposdemoi {
-    background-color:#E8EADC;
-    padding-left: 20px;
-    padding-bottom: 30px;
-    position: relative;
-}
-p{
-    width: ;
-    font-size: 20px;
-    right: 550px;
-
-}
-#aproposdemoi div {
-    width: 30%;
-}
-#aproposdemoi  img {
-    width: 25%;
-    margin-left: 10%;
-}
-#aproposdemoi #moi {
-    margin-left: 20px;
-}
-
-#aproposdemoi button {
-    background-color: transparent;
-    color: black;
-    font-family:'Montserrat', sans-serif ;
-    padding: 10px;
-    border: 2px solid #4CAF50;
-    text-align: center;
-
-}
-
-/* formation balises  */
-#formation {
-    background-color:#E8EADC;
-    padding: 10px 0px ;
-    position: relative;
-}
-#formation #formation-position {
-    text-align: center;
+/** Style de l'en-tête 
+========================================================================================================**/
+header .menu {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
-#formation article {
-    text-align: center;
-    width: 25%;
+ .logo {
+    max-height: 6rem;
 }
-#formation article h3{
-    text-decoration:underline;
-}
-#formation article img{
-    width: 70%;
-}
-#formation article div {
-    position: absolute;
-    width: 250px;
-    top: 130px;
-    margin-left: 50px;
-    opacity: 0;
-    animation: fadeOut 0.3s ease-out;
-    color: white;
-    background-color: rgba(51, 51, 51, 0.604);
-}
-#formation article div:hover {
-    animation: fadeIn 0.2S ease-in;
-    animation-fill-mode: forwards;
+/* Lien actif en gras */
+.navbar-nav .nav-link.active {
+    font-weight: bold;
 }
 
-@keyframes fadeOut {
-    0% {opacity:1;}
-    100% {opacity: 0;}
+/** Style de la bannière 
+========================================================================================================**/
+.hero {
+    background-image: url("../images/fond.jpg") !important;
+    max-height: 100%;
+    padding: 10rem 0px;
+}
+.hero h1 {
+  font-family: "Orbitron", sans-serif !important ;
 }
 
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100%{opacity: 1;}
+/** Style des cartes 
+========================================================================================================**/
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
+    padding: 0px 5px;
 }
 
-/* experience  */
-
-#experiencepro {
-    background-color:#E8EADC;
-    padding: 10px 0px ;
+/** Style des barres de progression 
+========================================================================================================**/
+.progress-bar {
+  transition: width 1.5s ease-in-out;
 }
-#experiencepro div {
-    width: 500px;
-    margin-left: 10px;
-}
-#experiencepro article img {
-    width: 50%;
-    height: 80%;
-    margin-left: 10px;
-}
-#experiencepro article, div{
-    display: flex;
-    flex-direction: column;
-}
- 
-/* competences */
-
-#competences {
-    background-color:#E8EADC;
-    padding: 10px 0px ;
-}
-#competences article {
-    margin-left: 10px;
+.custom-progress {
+  height: 30px;
+  border-radius: 50px;
+  background: #f0f0f0;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-
-/* progress bar */
-
-meter { 
-    display: flex;   
-    width: 300px;    
-    height: 30px;    
-    border: 1px solid #47747A;    
-    border-radius: 30px; 
+.custom-bar {
+  width: 0; /* commence à 0% */
+  background: linear-gradient(90deg, #368318, #237609);
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: width 1.5s ease-in-out; /* fluide */
 }
 
-meter::-webkit-meter-bar {
-  background: none;
-  background-color: whiteSmoke;
-  box-shadow: 0 5px 5px -5px #333 inset;
-}
-
-meter::-webkit-meter-optimum-value {
-  box-shadow: 0 5px 5px -5px #999 inset;
-  background-image: linear-gradient(
-    90deg, 
-    #7C8F54 5%,
-    #687847 25%,
-    #515d37 55%,
-    #2f3620 100%
-  );
-  background-size: 100% 100%;
-}
-
-/* les traits de séparation */
-hr.titre {
-    border: 1px solid #7C8F54;
-  }
-
-.double {
-    border: none;
-    border-top: 3px double rgb(37, 106, 109);
-} 
-
-/* balise projects */
-
-#projects {
-    background-color:#E8EADC;
-    padding: 10px 0px 20px;
-    text-align: center;
-}
-#projects button {
-    background-color: transparent;
-    color: black;
-    font-family:'Montserrat', sans-serif ;
-    padding: 10px;
-    border: 2px solid #4CAF50;
-    text-align: center;
-
-}
-#projects #projet {
-    display: flex;
-    flex-direction: row;
-}
-#projects article {
-    text-align: center;
-    display: inline-block;
-    width: 30%;
-}
-#projects article h3{
-    text-align: center;
-    text-decoration:underline;
-}
-#projects article img{
-    width: 80%;
-}
-
-
-
-/* contact */
-#infos {
-    background-color:#E8EADC;
-    padding: 10px 0px 20px;
-}
-#mes-infos {
-    display: inline-block;
-}
-#mes-infos li {
-    margin-left: 50%;
-    margin-bottom: 10px;
-}
-
-
-/* le bas de page  */
+/** Style du bas de page 
+========================================================================================================**/
 footer {
-    background-image: url('../images/fond.jpg');
-    margin-top: 50px;
-    height: 150px;
-    text-align: center;
-    color: #fff;
-}
-footer img {
-    background-color:#8bf1f1aa;
-    padding: 10px 0px ;
+  background-color: #32672d;
 }
 
-/* lettre de motivation */
-#lettre {
-    background-color:#E8EADC;
-    padding: 10px 0px ;
-    text-align: center;
+footer .copyright {
+   background-color: rgba(0, 0, 0, 0.2);
+   padding: 2rem;
 }
